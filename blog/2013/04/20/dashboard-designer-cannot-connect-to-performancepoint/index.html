@@ -4,16 +4,24 @@
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta charset="UTF-8">
   
-	<meta name="description" content="Search for Jekyll Metro">
+  <meta name="description" content="A Sample blog using Jekyll Metro">
   
   <meta name="author" content="Abdel Raoof Olakara">
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>
     
-      Search &middot; Jekyll Metro
+      Cannot Connect to PerformancePoint Service &middot; Jekyll Metro
     
   </title>
+  
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" value="summary">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Cannot Connect to PerformancePoint Service" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint" />
+  <meta property="og:description" content="" />
   
   <!-- CSS -->
   <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/bootstrap.css">
@@ -84,15 +92,13 @@
 
     <div class="container-fluid">
   <div class="row">
-    
-    <div class="hidden-xs col-md-2 col-sm-3 purple sidebar">
-    
-        <aside>
+    <div class="hidden-xs col-md-2 col-sm-3 li8-green sidebar">
+      <aside>
   <div class="row">
     <div class="col-md-12">
     <br/>
         
-        <h1 class="text-center" style="margin-top:0px"><a href="/" class="icon ic-back"></a></h1>
+        <h1 class="text-center" style="margin-top:0px"><a href="/blog" class="icon ic-back"></a></h1>
         
     </div>
   </div>
@@ -116,9 +122,7 @@
         
           
           
-            <li class="left-nav-item">
-              <a href="/blog/">Blog</a>
-            </li>
+            <li class="left-nav-item left-nav-selected">Blog</a>
           
         
           
@@ -137,7 +141,9 @@
         
           
           
-            <li class="left-nav-item left-nav-selected">Search</a>
+            <li class="left-nav-item">
+              <a href="/search/">Search</a>
+            </li>
           
         
         </ul>
@@ -145,68 +151,120 @@
   </div>
 </aside>
 
-    </div>
+    </div> <!-- Side column -->
     <div class="col-md-8 col-sm-7 col-md-offset-3 col-sm-offset-4">
-      <h1>Search</h1>
-      <form class="searh-form" role="form">
-<div id="search-form">
-	<input class="search form-control" name="q" placeholder="Search..." type="text">
-</div>
-</form>
-<div class="search-message"></div>
-<div id="results">
-  <h2 class="results-title"></h2>
-  <ul class="results-list"></ul>
-</div>
-<script>
-$(document).ready(function() {
-    var qry = GetURLParameter('q');
-		var data = [{
-		"title"    : "Another Sharepoint post",
-		"category" : "",
-		"tags"	   : "SharePoint and Designer",
-		"url"      : "/blog/2014/07/07/another-sharepoint-post",
-		"date"     : "July 07, 2014"},{
-		"title"    : "Markdown basics",
-		"category" : "",
-		"tags"	   : "Design and Markdown",
-		"url"      : "/blog/2014/06/25/markdown-basics",
-		"date"     : "June 25, 2014"},{
-		"title"    : "Another sample markdown",
-		"category" : "",
-		"tags"	   : "Design and Markdown",
-		"url"      : "/blog/2014/06/25/another-sample-markdown",
-		"date"     : "June 25, 2014"},{
-		"title"    : "A Sample pangram",
-		"category" : "",
-		"tags"	   : "Sample and Pangram",
-		"url"      : "/blog/2014/06/24/a-sample-pangram",
-		"date"     : "June 24, 2014"},{
-		"title"    : "Clearing SharePoint Designer Cache",
-		"category" : "",
-		"tags"	   : "SharePoint and Designer",
-		"url"      : "/blog/2013/10/11/clearing-sharepoint-designer-cache",
-		"date"     : "October 11, 2013"},{
-		"title"    : "Cannot Connect to PerformancePoint Service",
-		"category" : "",
-		"tags"	   : "SharePoint and PerformancePoint Service",
-		"url"      : "/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint",
-		"date"     : "April 20, 2013"}];
+      <article class="col-md-12 col-xs-12 justified">
+        <h1 class="post-title">Cannot Connect to PerformancePoint Service</h1>
+        <div class="publish-tag">
+          <span class="fa fa-calendar"></span>&nbsp;Published On April 20, 2013
+        </div>
+        <p>After configuring my PerformancePoint Service on SharePoint 2013. This error hit me when trying to create a new data source from Dashboard Designer.</p>
 
-    var x = $(".search").jekyllSearch({
-			      jsonData            : null,
-            template            : '<li><h4><a href="{url}" title="{title}">{title}</a></h4>Posted on {date}<br>Tags: {tags} </li>',
-            searchResults       : '#results',
-            searchResultsTitle  : '<h3>Search Results</h3>',
-            limit               : '10',
-            noResults           : '<h3>Your search did not match any documents.</h3>Suggestions:<ul><li>Make sure that all words are spelled correctly.</li><li>Try different keywords.</li><li>Try more general keywords.</li><li>Try fewer keywords.</li></ul>'
-     });
+<p>Here are the steps to make sure you have your PerformancePoint service configured properly.</p>
 
-     if(qry) {
-			$(".search").val(qry).trigger('keyup').focus();
-     }
-});
-</script>
+<p><strong>1. Make sure you have the PerformancePoint Service and Secure Store Service started.</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>You can check this by going to Central Administration</td>
+      <td>Application Management</td>
+      <td>Service Applications</td>
+      <td>Manage services on server</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>2. Make sure you have a Secure Store service application running.</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>You can check this by going to Central Administration</td>
+      <td>Application Management</td>
+      <td>Service Applications</td>
+      <td>Manage service applications.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ensure that you have configured the service application properly.</p>
+
+<p><strong>3. Make sure you have a PerformancePoint Service application running.</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>You can check this by going to Central Administration</td>
+      <td>Application Management</td>
+      <td>Service Applications</td>
+      <td>Manage service application.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ensure that you have configured the service application properly. Click on your performance point service application to take you to the management screen as shown below:</p>
+
+<p>Verify you application setting by selecting PerformancePoint Service Application Settings.</p>
+
+<p>Make sure you have your secure store displayed and you are using your appropriate unattended service account (If you are using the service account, click Change User and reenter the username and password).</p>
+
+<p><strong>4. And finally check service application associations.</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Go to Central Administration</td>
+      <td>Application Management</td>
+      <td>Service Applications</td>
+      <td>Configure service application associations</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Click on default and ensure that your performance point service is selected.</p>
+
+<p>These steps should ensure that you get your PerformancePoint service up and running.</p>
+
+        <br/>
+        <span class="fa fa-tag"></span>Tags:
+        
+          
+            <a href="/tags/SharePoint"><span class="label label-primary">SharePoint</span></a>
+          
+            <a href="/tags/PerformancePoint Service"><span class="label label-primary">PerformancePoint Service</span></a>
+          
+        
+        <br/><br/>
+        <h4>Comments:</h4>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'testingblogo';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </article>
+
+      <div class="row">
+        <div class="col-sm-6 col-xs-6 text-left">
+       	
+        	<span class="btn btn-blue disabled">← Previous</span>
+        
+        </div>
+        <div class="col-sm-6 col-xs-6 text-right">
+        
+        	<a class="btn btn-blue" href="/blog/2013/10/11/clearing-sharepoint-designer-cache">Next →</a>
+        
+        </div>
+      </div>
 
       <footer class="row">
       <div class="col-ms-12 text-center">
@@ -297,8 +355,8 @@ $(document).ready(function() {
             
       </div>
 </footer>
-    </div>
-  </div> <!-- row -->
+    </div> <!-- content area column -->
+  </div> <!-- row  -->
 </div> <!-- container -->
 
     <script>

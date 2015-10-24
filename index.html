@@ -1,14 +1,110 @@
----
-layout: master
-title: Home
-description: Home Page for Jekyll Metro Theme
----
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta charset="UTF-8">
+  
+	<meta name="description" content="Home Page for Jekyll Metro Theme">
+  
+  <meta name="author" content="Abdel Raoof Olakara">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+    
+      Jekyll Metro &middot; A Metro theme for Jekyll
+    
+  </title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/app.css">
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/colors.css">
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/github.css">
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/icomoon.css">
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/controls.css">
 
-<div class="container">
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jekyll-search.js"></script>
+  <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+
+  
+  <!-- Add background-image -->
+    <script>
+
+    var backgroundImage = [];
+
+    backgroundImage[0]='bcg1.jpg';
+    backgroundImage[1]='bcg2.jpg';
+    backgroundImage[2]='bcg3.jpg';
+    backgroundImage[3]='bcg4.jpg';
+
+    var random=Math.floor(Math.random()*4);
+    document.write("<style>body {background: url("+"/assets/images/"+backgroundImage[random]+") no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color:#fff;background-color:#333;}</style>")
+
+    </script>
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/bcg.css">
+  <link rel="stylesheet" href="http://192.168.1.11:4000/assets/css/MetroJs.min.css">
+  <script src="/assets/js/MetroJs.min.js"></script>
+  
+
+  
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="http://192.168.1.11:4000/assets/images/favicon-128.png">
+  <link rel="shortcut icon" href="http://192.168.1.11:4000/assets/images/favicon-16.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+</head>
+
+  <body>
+                <div class="navbar navbar-default visible-xs">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Jekyll Metro</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        
+                          <li>
+                            <a href="/about/">About</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/resume/">Resume</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/blog/">Blog</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/tags/">Tags</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/archive/">Archive</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/search/">Search</a>
+                          </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+    <div class="container">
 
 	<header class="row">
 	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
-	    <h1 id="pin">{{site.title}}</h1>
+	    <h1 id="pin">Jekyll Metro</h1>
 	  </div>
 	</header>
 	<nav>
@@ -17,7 +113,7 @@ description: Home Page for Jekyll Metro Theme
 				<a href="about/" title="About Me">
 					<div class="tile purple profile">
 						<h2 class="title">About Me</h2>
-						<p>Hello World, I am {{site.author}}.</p>
+						<p>Hello World, I am Abdel Raoof Olakara.</p>
 					</div>
 				</a>
 		    </div>
@@ -41,68 +137,69 @@ description: Home Page for Jekyll Metro Theme
 		<div class="row">
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts offset:1 limit:1 %}
-				<a href="{{post.url}}" title="Recent Article">
+				
+				<a href="/blog/2014/06/25/markdown-basics" title="Recent Article">
 					<div class="tile green">
 						<h3 class="title">Recent Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						<h4 class="title">Markdown basics</h4>
+						<p> Markdown is intended to be as easy-to-read and easy-to-write as...</p>
 					</div>
 				</a>
-				{% endfor %}
+				
 			</div>
 
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts limit:1 %}
-				<a href="{{post.url}}" title="Latest Article">
+				
+				<a href="/blog/2014/07/07/another-sharepoint-post" title="Latest Article">
 					<div class="tile red">
 						<h3 class="title">Latest Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						<h4 class="title">Another Sharepoint post</h4>
+						<p> A blog is a Web site that enables you or...</p>
 					</div>
 				</a>
-				{% endfor %}
+				
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.stackoverflow}}" title="StackOverflow" class="tile darken" >
+				<a href="http://stackoverflow.com/users/185655/abdel-raoof" title="StackOverflow" class="tile darken" >
 					<i class="icon-skow" style="font-size:8em;color:white"></i>
 				</a>
 			</div>
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts %}
-					{% if post.featured == true %}
-					<a href="{{post.url}}" title="Featured Article">
-						<div class="tile orange">
-							<h3 class="title">Featured Article</h3>
-							<h4 class="title">{{ post.title }}</h4>
-							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-						</div>
-					</a>
-					{% break %}
-					{% endif %}
-				{% endfor %}
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
 			</div>
 		</div>
 
 		<div class="row" style="margin-bottom:25px">
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.twitter}}" title="Twitter" class="tile blue">
+				<a href="https://twitter.com/olakara" title="Twitter" class="tile blue">
 					<i class="icon-twtr" style="font-size:8em"></i>
 				</a>
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.gplus}}" title="Google Plus"  class="tile orange">
+				<a href="https://plus.google.com/100425464897246255887/" title="Google Plus"  class="tile orange">
 					<i class="icon-gpls" style="font-size:8em"></i>
 				</a>
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.facebook}}" class="tile blue">
+				<a href="https://www.facebook.com/olakara" class="tile blue">
 					<i class="icon-fcbk" style="font-size:8em"></i>
 				</a>
 			</div>
@@ -111,14 +208,14 @@ description: Home Page for Jekyll Metro Theme
 <<<<<<< HEAD
 				<a href="feed.xml" class="tile purple bord rs-ico"></a>
 =======
-				<a href="{{site.github}}" title="Github" class="tile purple">
+				<a href="https://github.com/olakara" title="Github" class="tile purple">
 					<i class="icon-gthb" style="font-size:8em"></i>
 				</a>
 >>>>>>> development1.0
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.linkedin}}" title="LinkedIn" class="tile blue">
+				<a href="https://ae.linkedin.com/in/olakara/" title="LinkedIn" class="tile blue">
 					<i class="icon-lkin" style="font-size:8em"></i>
 				</a>
 			</div>
@@ -126,3 +223,25 @@ description: Home Page for Jekyll Metro Theme
 		</div>
 	</nav>
 </div>
+
+    <script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-52149651-1', 'blog-olakara.rhcloud.com');
+ga('send', 'pageview');
+</script>
+
+    <a href="#" class="scrollToTop icon ic-up"></a>		
+  </body>
+</html>
+

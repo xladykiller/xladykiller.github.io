@@ -4,14 +4,14 @@
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta charset="UTF-8">
   
-	<meta name="description" content="Search for Jekyll Metro">
+	<meta name="description" content="Resume of Abdel Raoof">
   
   <meta name="author" content="Abdel Raoof Olakara">
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>
     
-      Search &middot; Jekyll Metro
+      Resume &middot; Jekyll Metro
     
   </title>
   
@@ -85,7 +85,7 @@
     <div class="container-fluid">
   <div class="row">
     
-    <div class="hidden-xs col-md-2 col-sm-3 purple sidebar">
+    <div class="hidden-xs col-md-2 col-sm-3 red sidebar">
     
         <aside>
   <div class="row">
@@ -109,9 +109,7 @@
         
           
           
-            <li class="left-nav-item">
-              <a href="/resume/">Resume</a>
-            </li>
+            <li class="left-nav-item left-nav-selected">Resume</a>
           
         
           
@@ -137,7 +135,9 @@
         
           
           
-            <li class="left-nav-item left-nav-selected">Search</a>
+            <li class="left-nav-item">
+              <a href="/search/">Search</a>
+            </li>
           
         
         </ul>
@@ -147,66 +147,94 @@
 
     </div>
     <div class="col-md-8 col-sm-7 col-md-offset-3 col-sm-offset-4">
-      <h1>Search</h1>
-      <form class="searh-form" role="form">
-<div id="search-form">
-	<input class="search form-control" name="q" placeholder="Search..." type="text">
-</div>
-</form>
-<div class="search-message"></div>
-<div id="results">
-  <h2 class="results-title"></h2>
-  <ul class="results-list"></ul>
-</div>
-<script>
-$(document).ready(function() {
-    var qry = GetURLParameter('q');
-		var data = [{
-		"title"    : "Another Sharepoint post",
-		"category" : "",
-		"tags"	   : "SharePoint and Designer",
-		"url"      : "/blog/2014/07/07/another-sharepoint-post",
-		"date"     : "July 07, 2014"},{
-		"title"    : "Markdown basics",
-		"category" : "",
-		"tags"	   : "Design and Markdown",
-		"url"      : "/blog/2014/06/25/markdown-basics",
-		"date"     : "June 25, 2014"},{
-		"title"    : "Another sample markdown",
-		"category" : "",
-		"tags"	   : "Design and Markdown",
-		"url"      : "/blog/2014/06/25/another-sample-markdown",
-		"date"     : "June 25, 2014"},{
-		"title"    : "A Sample pangram",
-		"category" : "",
-		"tags"	   : "Sample and Pangram",
-		"url"      : "/blog/2014/06/24/a-sample-pangram",
-		"date"     : "June 24, 2014"},{
-		"title"    : "Clearing SharePoint Designer Cache",
-		"category" : "",
-		"tags"	   : "SharePoint and Designer",
-		"url"      : "/blog/2013/10/11/clearing-sharepoint-designer-cache",
-		"date"     : "October 11, 2013"},{
-		"title"    : "Cannot Connect to PerformancePoint Service",
-		"category" : "",
-		"tags"	   : "SharePoint and PerformancePoint Service",
-		"url"      : "/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint",
-		"date"     : "April 20, 2013"}];
+      <h1>Resume</h1>
+      <p>Six years of experience in software development on Microsoft and Java technologies. Experienced in design and development of enterprise web applications, content management systems and enterprise application integration.</p>
 
-    var x = $(".search").jekyllSearch({
-			      jsonData            : null,
-            template            : '<li><h4><a href="{url}" title="{title}">{title}</a></h4>Posted on {date}<br>Tags: {tags} </li>',
-            searchResults       : '#results',
-            searchResultsTitle  : '<h3>Search Results</h3>',
-            limit               : '10',
-            noResults           : '<h3>Your search did not match any documents.</h3>Suggestions:<ul><li>Make sure that all words are spelled correctly.</li><li>Try different keywords.</li><li>Try more general keywords.</li><li>Try fewer keywords.</li></ul>'
-     });
+<p><strong>Experience in Web Technology:</strong>
+Building and Supporting web applications using Microsoft Technologies (ASP.Net &amp; ASP.Net MVC). Developing UI using Ext JS and jQuery.</p>
 
-     if(qry) {
-			$(".search").val(qry).trigger('keyup').focus();
-     }
-});
-</script>
+<p><strong>Experience in Enterprise Content Management:</strong>
+Implemented custom applications for content and knowledge management. Have also worked with leading industry ECM applications like SharePoint 2013, MOSS 2007, SharePoint 2010 and Documentum.</p>
+
+<!-- Skills -->
+<section class="row">
+	<header class="col-md-3">
+		<h3 style="text-transform:uppercase;color:gray">Skills</h3>
+	</header>
+	<div class="col-md-9">
+		<div class="row">
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item active"><h4><strong>Programming</strong></h4></li>
+					<li class="list-group-item">C#</li>
+					<li class="list-group-item">ASP.Net / ASP.Net MVC</li>
+					<li class="list-group-item">Javascript</li>
+					<li class="list-group-item">HTML &amp; CSS</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item active"><h4><strong>Specialties</strong></h4></li>
+					<li class="list-group-item">.Net Web Technologies</li>
+					<li class="list-group-item">SharePoint 2013</li>
+					<li class="list-group-item">Sencha Ext Js</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<hr />
+
+<!-- Education -->
+<section class="row">
+	<header class="col-md-3">
+		<h3 style="text-transform:uppercase;color:gray">Education</h3>
+	</header>
+	<div class="col-md-9">
+		<ul>
+			<li>
+				<h4>Master of Computer Applications (MCA)</h4>
+				<p>2004-2007 - Vellore Institute of Technology</p>
+			</li>
+			<li>
+				<h4>Bachelor of Sscience - Computer Science</h4>
+				<p>2001-2004 - University of Calicut</p>
+			</li>
+		</ul>
+	</div>
+</section>
+<hr />
+
+<!-- Work -->
+<section class="row">
+	<header class="col-md-3">
+		<h3 style="text-transform:uppercase;color:gray">Work Experience</h3>
+	</header>
+	<div class="col-md-9">
+		<ul>
+			<li>
+				<h4>C4 Advanced Solutions</h4>
+				<h5>Present</h5>
+				<p>Working as Application Developer</p>
+			</li>
+			<li>
+				<h4>Abdul Samad Al Qurashi</h4>
+				<h5>March 2010 - January 2013</h5>
+				<p>Worked as Web Developer</p>
+			</li>
+			<li>
+				<h4>Samsung SDS</h4>
+				<h5>May 2009 - March 2010</h5>
+				<p>Worked as Web Developer with MIS team</p>
+			</li>
+			<li>
+				<h4>Honeywell Technology Solutions</h4>
+				<h5>December 2006 - December 2008</h5>
+				<p>Worked as Project Trainee &amp; later Software Engineer</p>
+			</li>
+		</ul>
+	</div>
+</section>
 
       <footer class="row">
       <div class="col-ms-12 text-center">
@@ -293,7 +321,7 @@ $(document).ready(function() {
             &copy; 2015 - Abdel Raoof Olakara. All rights reserved<br/>
             Built using 
             
-            <a href="http://jekyllrb.com/">Jekyll</a>
+            <a class="red-link" href="http://jekyllrb.com/">Jekyll</a>
             
       </div>
 </footer>

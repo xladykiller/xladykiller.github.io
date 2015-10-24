@@ -1,20 +1,117 @@
----
-layout: none
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
+    
     <url>
-        <loc>{{site.url}}{{ post.url | remove: 'index.html' }}</loc>
+        <loc>http://192.168.1.11:4000/blog/2014/07/07/another-sharepoint-post</loc>
     </url>
-    {% endfor %}
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
+    
     <url>
-        <loc>{{site.url}}{{ page.url | remove: 'index.html' }}</loc>
+        <loc>http://192.168.1.11:4000/blog/2014/06/25/markdown-basics</loc>
     </url>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+    
+    <url>
+        <loc>http://192.168.1.11:4000/blog/2014/06/25/another-sample-markdown</loc>
+    </url>
+    
+    <url>
+        <loc>http://192.168.1.11:4000/blog/2014/06/24/a-sample-pangram</loc>
+    </url>
+    
+    <url>
+        <loc>http://192.168.1.11:4000/blog/2013/10/11/clearing-sharepoint-designer-cache</loc>
+    </url>
+    
+    <url>
+        <loc>http://192.168.1.11:4000/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint</loc>
+    </url>
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/404.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/feed.xml</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/search/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/archive/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/blog/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/tags/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/tags/SharePoint/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/about/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/resume/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://192.168.1.11:4000/sitemap.xml</loc>
+    </url>
+    
+    
+    
 </urlset>
