@@ -1,16 +1,18 @@
 ---
 layout:     post
-title:      "ES5, ES6, ES2016, ES.Next: JavaScript 的版本是怎么回事？「译」"
-subtitle:   "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?"
-date:       2015-09-22
-author:     "Hux"
+title:      "第一次使用github写博客"
+subtitle:   "github pages"
+date:       2015-10-24
+author:     "楚爷"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - 前端开发
-    - JavaScript
-    - 翻译
+    - jekyll
+    - github.io
+    - 博客
 ---
 
+
+走上技术道路以来，总是想着要写写博客，记录自己的成长路程。一直用着免费得博客系统，也一直想着要自己搭建一个博客，每次要实施的时候，总是各种原因没有坚持下去，导致服务器到期，然后不了了之。
 
 JavaScript 有着很奇怪的命名史。
 
