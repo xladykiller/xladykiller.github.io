@@ -5,8 +5,8 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 25 Oct 2015 10:34:12 +0800</pubDate>
-    <lastBuildDate>Sun, 25 Oct 2015 10:34:12 +0800</lastBuildDate>
+    <pubDate>Sun, 25 Oct 2015 10:35:51 +0800</pubDate>
+    <lastBuildDate>Sun, 25 Oct 2015 10:35:51 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -36,17 +36,17 @@
         Port 22
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;#git服务器&lt;br /&gt;
-```&lt;br /&gt;
-Host 192.168.9.9&lt;/p&gt;
+&lt;p&gt;#git服务器&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;    HostName 192.168.9.9
+&lt;pre&gt;&lt;code&gt;Host 192.168.9.9
 
-    IdentityFile ~/.ssh/id_rsa
+        HostName 192.168.9.9
 
-    User git
+        IdentityFile ~/.ssh/id_rsa
 
-    ProxyCommand ssh proxyvm -W %h:%p ```
+        User git
+
+        ProxyCommand ssh proxyvm -W %h:%p
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;保存&lt;br /&gt;

@@ -192,17 +192,17 @@
         Port 22
 </code></pre>
 
-<p>#git服务器<br />
-```<br />
-Host 192.168.9.9</p>
+<p>#git服务器</p>
 
-<pre><code>    HostName 192.168.9.9
+<pre><code>Host 192.168.9.9
 
-    IdentityFile ~/.ssh/id_rsa
+        HostName 192.168.9.9
 
-    User git
+        IdentityFile ~/.ssh/id_rsa
 
-    ProxyCommand ssh proxyvm -W %h:%p ```
+        User git
+
+        ProxyCommand ssh proxyvm -W %h:%p
 </code></pre>
 
 <p>保存<br />
