@@ -58,7 +58,7 @@ ga_domain: gitos.org
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "自我描述"
+sidebar-about-description: "创过业、做过独立开发者、上过班"
 sidebar-avatar: /img/avatar-cy.png     # use absolute URL.
 
 
