@@ -384,17 +384,19 @@
 
 <!-- Baidu Tongji -->
 <script>
-    // dynamic User hacking by Hux
     var _baId = document.getElementById('baId').value;
-
-    // Originial
+    console.log("baId:", _baId);
+    if (_baId == undefined || _baId == ""){
+        _baId = "9b10bb2201ada3c2b24e47120990484f";
+    }
     var _hmt = _hmt || [];
     (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?" + _baId;
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
     })();
+
 </script>
 
 
