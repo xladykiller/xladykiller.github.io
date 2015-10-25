@@ -9,9 +9,9 @@
     <meta name="keyword"  content="楚爷, Purely, Blog, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="img/favicon.ico">
 
-    <title>第一次使用github写博客 - 港湾 | Purely Blog</title>
+    <title>macbook通ssh代理来访问受限的git服务 - 港湾 | Purely Blog</title>
 
-    <link rel="canonical" href="http://gitos.org/2015/10/24/new-blog/">
+    <link rel="canonical" href="http://gitos.org/2015/10/25/ssh-proxy-git/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -139,19 +139,17 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#jekyll" title="jekyll">jekyll</a>
+                        <a class="tag" href="/tags/#ssh proxy" title="ssh proxy">ssh proxy</a>
                         
-                        <a class="tag" href="/tags/#github.io" title="github.io">github.io</a>
-                        
-                        <a class="tag" href="/tags/#博客" title="博客">博客</a>
+                        <a class="tag" href="/tags/#git proxy" title="git proxy">git proxy</a>
                         
                     </div>
-                    <h1>第一次使用github写博客</h1>
+                    <h1>macbook通ssh代理来访问受限的git服务</h1>
                     
                     
-                    <h2 class="subheading">github pages</h2>
+                    <h2 class="subheading">通过有权限的代理服务器提交git</h2>
                     
-                    <span class="meta">Posted by 楚爷 on October 24, 2015</span>
+                    <span class="meta">Posted by 楚爷 on October 25, 2015</span>
                 </div>
             </div>
         </div>
@@ -169,9 +167,48 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-				<p>走上技术道路以来，总是想着要写写博客，记录自己的成长路程。一直用着免费得博客系统，也一直想着要自己搭建一个博客，每次要实施的时候，总是各种原因没有坚持下去，导致服务器到期，然后不了了之。</p>
+				<p>#先安装proxychains-ng:</p>
 
-<p>这几日，经常想着自己重新弄个博客，刚好这周末不加班，就查了查博客方案。发现很多人推荐使用github的page来做博客，然后看了下文档，可以自定义域名。这个正好符合我的要求，一来可以使用自己的域名，二来免得自己管理服务器，三来编辑也方便，直接编辑好文档后，jekyll生成html通过git传到github就好了。</p>
+<p><code>brew install proxychains-ng</code></p>
+
+<p>#然后将公钥上传服务器, 并在~/.ssh下建立authorized_keys文件，进行免登陆处理</p>
+
+<p><code>cat id_rsa.pub &gt;&gt; authorized_keys</code></p>
+
+<p>#本地编辑</p>
+
+<p><code>vim ~/.ssh/config</code></p>
+
+<p>#代理服务器</p>
+
+<pre><code>Host proxyvm
+
+        HostName 192.168.8.7
+
+        IdentityFile ~/.ssh/id_rsa
+
+        User ubuntu
+
+        Port 22
+</code></pre>
+
+<p>#git服务器<br />
+```<br />
+Host 192.168.9.9</p>
+
+<pre><code>    HostName 192.168.9.9
+
+    IdentityFile ~/.ssh/id_rsa
+
+    User git
+
+    ProxyCommand ssh proxyvm -W %h:%p ```
+</code></pre>
+
+<p>保存<br />
+现在可以通过<br />
+<code>git clone git@192.168.9.9:pro.git</code><br />
+clone工程和提交了。</p>
 
 
                 <hr>
@@ -181,11 +218,15 @@
                 </style>
                 <div class="ds-share"
                     style="text-align: right"
-                    data-thread-key="/2015/10/24/new-blog"
-                    data-title="第一次使用github写博客"
-                    data-url="http://gitos.org/2015/10/24/new-blog/"
+                    data-thread-key="/2015/10/25/ssh-proxy-git"
+                    data-title="macbook通ssh代理来访问受限的git服务"
+                    data-url="http://gitos.org/2015/10/25/ssh-proxy-git/"
                     data-images="http://gitos.org/img/post-bg-os-metro.jpg"
-                    data-content="走上技术道路以来，总是想着要写写博客，记录自己的成长路程。一直用着免费得博客系统，也一直想着要自己搭建一个博客，每次要实施的时候，总是各种原因没有坚持下去... | 港湾 | Purely Blog " >
+                    data-content="#先安装proxychains-ng:
+
+brew install proxychains-ng
+
+#然后将公钥上传服务器, 并在~/.ssh下建立aut... | 港湾 | Purely Blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -204,10 +245,10 @@
 
                 <ul class="pager">
                     
-                    
-                    <li class="next">
-                        <a href="/2015/10/25/ssh-proxy-git/" data-toggle="tooltip" data-placement="top" title="macbook通ssh代理来访问受限的git服务">Next Post &rarr;</a>
+                    <li class="previous">
+                        <a href="/2015/10/24/new-blog/" data-toggle="tooltip" data-placement="top" title="第一次使用github写博客">&larr; Previous Post</a>
                     </li>
+                    
                     
                 </ul>
 
@@ -216,9 +257,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                        data-thread-key="/2015/10/24/new-blog"
-                        data-title="第一次使用github写博客"
-                        data-url="http://gitos.org/2015/10/24/new-blog/" >
+                        data-thread-key="/2015/10/25/ssh-proxy-git"
+                        data-title="macbook通ssh代理来访问受限的git服务"
+                        data-url="http://gitos.org/2015/10/25/ssh-proxy-git/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->

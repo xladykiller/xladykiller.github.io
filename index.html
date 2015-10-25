@@ -153,6 +153,42 @@
             ">
     			
 <div class="post-preview">
+    <a href="/2015/10/25/ssh-proxy-git/">
+        <h2 class="post-title">
+            macbook通ssh代理来访问受限的git服务
+        </h2>
+        
+        <h3 class="post-subtitle">
+            通过有权限的代理服务器提交git
+        </h3>
+        
+        <div class="post-content-preview">
+            #先安装proxychains-ng:
+
+brew install proxychains-ng
+
+#然后将公钥上传服务器, 并在~/.ssh下建立authorized_keys文件，进行免登陆处理
+
+cat id_rsa.pub &gt;&gt; authorized_keys
+
+#本地编辑
+
+vim ~/.ssh/config
+
+#代理服务器
+
+Host proxyvm
+
+       ...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 楚爷 on October 25, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="/2015/10/24/new-blog/">
         <h2 class="post-title">
             第一次使用github写博客
@@ -193,6 +229,10 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
+                        
+                            
+                        
+                            
                         
                             
                         
