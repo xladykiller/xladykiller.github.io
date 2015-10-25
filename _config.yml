@@ -49,7 +49,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 9b10bb2201ada3c2b24e47120990484f
+ba_track_id: 3369e79dfb67b43d4cb5b94e399c2f57
 # Google Analytics
 #ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 #ga_domain: gitos.org
