@@ -72,10 +72,13 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "元宝铺",
-        href: "http://www.yuanbaopu.com/"
+        title: "Kathyxxu Blog",
+        href: "http://kathyxxu.github.io"
     },{
         title: "烂泥行天下",
         href: "http://www.ilanni.com"
+    },{
+        title: "元宝铺",
+        href: "http://www.yuanbaopu.com/"
     }
 ]
