@@ -39,10 +39,8 @@ layout: default
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
-                            {{ tag }}
-                            <b>{{ tag[0] }}</b>
-                            {% if tag.size > {{site.featured-condition-size}} %}
-                				<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}"  rel="{{ tag[0].size }}">
+                            {% if tag[0].size > {{site.featured-condition-size}} %}
+                				<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[0].size }}">
                                     {{ tag[0] }}
                                 </a>
                             {% endif %}
@@ -90,8 +88,8 @@ layout: default
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                         {% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
-                                <a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                            {% if tag.size > {{site.featured-condition-size}} %}
+                                <a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1] }}">
                                     {{ tag[0] }}
                                 </a>
                             {% endif %}
