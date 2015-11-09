@@ -10,7 +10,8 @@ tags:
     - git proxy
 ---
 
-##先安装proxychains-ng:
+
+#先安装proxychains-ng:
 
 `brew install proxychains-ng`
 
