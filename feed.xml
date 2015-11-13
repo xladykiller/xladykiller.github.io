@@ -5,25 +5,25 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Nov 2015 12:59:17 +0800</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2015 12:59:17 +0800</lastBuildDate>
+    <pubDate>Fri, 13 Nov 2015 13:01:56 +0800</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2015 13:01:56 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>macbook通ssh代理来访问受限的git服务</title>
-        <description>&lt;h1 id=&quot;proxychains-ng&quot;&gt;先安装proxychains-ng:&lt;/h1&gt;
+        <description>&lt;h3 id=&quot;proxychains-ng&quot;&gt;先安装proxychains-ng:&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;brew install proxychains-ng&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;然后将公钥上传服务器, 并在服务器的~/.ssh下建立authorized_keys文件，进行免登陆处理&lt;/p&gt;
+&lt;h3 id=&quot;sshauthorizedkeys&quot;&gt;然后将公钥上传服务器, 并在服务器的~/.ssh下建立authorized_keys文件，进行免登陆处理&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;本地编辑&lt;/p&gt;
+&lt;h3 id=&quot;section&quot;&gt;本地编辑&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;vim ~/.ssh/config&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;代理服务器&lt;/p&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;代理服务器&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;Host proxyvm
 
@@ -36,7 +36,7 @@
         Port 22
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;git服务器&lt;/p&gt;
+&lt;h3 id=&quot;git&quot;&gt;git服务器&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;Host 192.168.9.9
 
