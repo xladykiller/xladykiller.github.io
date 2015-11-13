@@ -231,124 +231,31 @@ Host proxyvm
                     <div class="tags">
                         
                             
-                                <a href="/tags/#jekyll" title="jekyll" rel="<p>走上技术道路以来，总是想着要写写博客，记录自己的成长路程。一直用着免费得博客系统，也一直想着要自己搭建一个博客，每次要实施的时候，总是各种原因没有坚持下去，导致服务器到期，然后不了了之。</p>
-
-<p>这几日，经常想着自己重新弄个博客，刚好这周末不加班，就查了查博客方案。发现很多人推荐使用github的page来做博客，然后看了下文档，可以自定义域名。这个正好符合我的要求，一来可以使用自己的域名，二来免得自己管理服务器，三来编辑也方便，直接编辑好文档后，jekyll生成html通过git传到github就好了。</p>
-">
+                                <a href="/tags/#jekyll" title="jekyll" rel="jekyll">
                                     jekyll
                                 </a>
                             
                         
                             
-                                <a href="/tags/#github.io" title="github.io" rel="<p>走上技术道路以来，总是想着要写写博客，记录自己的成长路程。一直用着免费得博客系统，也一直想着要自己搭建一个博客，每次要实施的时候，总是各种原因没有坚持下去，导致服务器到期，然后不了了之。</p>
-
-<p>这几日，经常想着自己重新弄个博客，刚好这周末不加班，就查了查博客方案。发现很多人推荐使用github的page来做博客，然后看了下文档，可以自定义域名。这个正好符合我的要求，一来可以使用自己的域名，二来免得自己管理服务器，三来编辑也方便，直接编辑好文档后，jekyll生成html通过git传到github就好了。</p>
-">
+                                <a href="/tags/#github.io" title="github.io" rel="github.io">
                                     github.io
                                 </a>
                             
                         
                             
-                                <a href="/tags/#博客" title="博客" rel="<p>走上技术道路以来，总是想着要写写博客，记录自己的成长路程。一直用着免费得博客系统，也一直想着要自己搭建一个博客，每次要实施的时候，总是各种原因没有坚持下去，导致服务器到期，然后不了了之。</p>
-
-<p>这几日，经常想着自己重新弄个博客，刚好这周末不加班，就查了查博客方案。发现很多人推荐使用github的page来做博客，然后看了下文档，可以自定义域名。这个正好符合我的要求，一来可以使用自己的域名，二来免得自己管理服务器，三来编辑也方便，直接编辑好文档后，jekyll生成html通过git传到github就好了。</p>
-">
+                                <a href="/tags/#博客" title="博客" rel="博客">
                                     博客
                                 </a>
                             
                         
                             
-                                <a href="/tags/#ssh proxy" title="ssh proxy" rel="<h3 id="proxychains-ng">先安装proxychains-ng:</h3>
-
-<p><code>brew install proxychains-ng</code></p>
-
-<h3 id="sshauthorizedkeys">然后将公钥上传服务器, 并在服务器的~/.ssh下建立authorized_keys文件，进行免登陆处理</h3>
-
-<p><code>cat id_rsa.pub &gt;&gt; authorized_keys</code></p>
-
-<h3 id="section">本地编辑</h3>
-
-<p><code>vim ~/.ssh/config</code></p>
-
-<h3 id="section-1">代理服务器</h3>
-
-<pre><code>Host proxyvm
-
-        HostName 192.168.8.7
-
-        IdentityFile ~/.ssh/id_rsa
-
-        User ubuntu
-
-        Port 22
-</code></pre>
-
-<h3 id="git">git服务器</h3>
-
-<pre><code>Host 192.168.9.9
-
-        HostName 192.168.9.9
-
-        IdentityFile ~/.ssh/id_rsa
-
-        User git
-
-        ProxyCommand ssh proxyvm -W %h:%p
-</code></pre>
-
-<p>保存<br />
-现在可以通过<br />
-<code>git clone git@192.168.9.9:pro.git</code><br />
-clone工程和提交了。</p>
-">
+                                <a href="/tags/#ssh proxy" title="ssh proxy" rel="ssh proxy">
                                     ssh proxy
                                 </a>
                             
                         
                             
-                                <a href="/tags/#git proxy" title="git proxy" rel="<h3 id="proxychains-ng">先安装proxychains-ng:</h3>
-
-<p><code>brew install proxychains-ng</code></p>
-
-<h3 id="sshauthorizedkeys">然后将公钥上传服务器, 并在服务器的~/.ssh下建立authorized_keys文件，进行免登陆处理</h3>
-
-<p><code>cat id_rsa.pub &gt;&gt; authorized_keys</code></p>
-
-<h3 id="section">本地编辑</h3>
-
-<p><code>vim ~/.ssh/config</code></p>
-
-<h3 id="section-1">代理服务器</h3>
-
-<pre><code>Host proxyvm
-
-        HostName 192.168.8.7
-
-        IdentityFile ~/.ssh/id_rsa
-
-        User ubuntu
-
-        Port 22
-</code></pre>
-
-<h3 id="git">git服务器</h3>
-
-<pre><code>Host 192.168.9.9
-
-        HostName 192.168.9.9
-
-        IdentityFile ~/.ssh/id_rsa
-
-        User git
-
-        ProxyCommand ssh proxyvm -W %h:%p
-</code></pre>
-
-<p>保存<br />
-现在可以通过<br />
-<code>git clone git@192.168.9.9:pro.git</code><br />
-clone工程和提交了。</p>
-">
+                                <a href="/tags/#git proxy" title="git proxy" rel="git proxy">
                                     git proxy
                                 </a>
                             
