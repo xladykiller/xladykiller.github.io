@@ -271,3 +271,4 @@ So, the SEO Title is introduced to solve this problem, you can set `SEOTitle` di
 
 This theme is forked from [IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)  
 Thanks Jekyll and Github Pages!
+
