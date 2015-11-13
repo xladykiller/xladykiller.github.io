@@ -11,13 +11,11 @@ tags:
 ---
 
 
-
-
 # 先安装proxychains-ng:
 
 `brew install proxychains-ng`
 
-# 然后将公钥上传到服务器, 并在~/.ssh下建立authorized_keys文件，进行免登陆处理
+# 然后将公钥上传服务器, 并在服务器的~/.ssh下建立authorized_keys文件，进行免登陆处理
 
 `cat id_rsa.pub >> authorized_keys`
 
