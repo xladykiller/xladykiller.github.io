@@ -5,8 +5,8 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Nov 2015 09:32:41 +0800</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2015 09:32:41 +0800</lastBuildDate>
+    <pubDate>Fri, 13 Nov 2015 09:36:10 +0800</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2015 09:36:10 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -15,7 +15,7 @@
 
 &lt;p&gt;&lt;code&gt;brew install proxychains-ng&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;sshauthorizedkeys&quot;&gt;然后将公钥上传到服务器, 并在~/.ssh下建立authorized_keys文件，进行免登陆处理&lt;/h1&gt;
+&lt;h1 id=&quot;sshauthorizedkeys&quot;&gt;然后将公钥上传服务器, 并在服务器的~/.ssh下建立authorized_keys文件，进行免登陆处理&lt;/h1&gt;
 
 &lt;p&gt;&lt;code&gt;cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys&lt;/code&gt;&lt;/p&gt;
 
