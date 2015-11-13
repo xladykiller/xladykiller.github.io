@@ -5,13 +5,13 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Nov 2015 12:57:11 +0800</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2015 12:57:11 +0800</lastBuildDate>
+    <pubDate>Fri, 13 Nov 2015 12:58:23 +0800</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2015 12:58:23 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>macbook通ssh代理来访问受限的git服务</title>
-        <description>&lt;p&gt;先安装proxychains-ng:&lt;/p&gt;
+        <description>&lt;p&gt;#先安装proxychains-ng:#&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;brew install proxychains-ng&lt;/code&gt;&lt;/p&gt;
 
