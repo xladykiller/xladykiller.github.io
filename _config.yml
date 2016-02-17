@@ -12,11 +12,7 @@ baseurl: ""
 
 # SNS settings
 RSS: false
-#weibo_username:     xladykiller
-#zhihu_username:     xladykiller
 github_username:    xladykiller
-#twitter_username:  huxpro
-#facebook_username:  xladykiller
 
 
 
