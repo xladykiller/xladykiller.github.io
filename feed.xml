@@ -5,9 +5,56 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Feb 2016 16:54:59 +0800</pubDate>
-    <lastBuildDate>Wed, 17 Feb 2016 16:54:59 +0800</lastBuildDate>
+    <pubDate>Sat, 20 Feb 2016 17:46:35 +0800</pubDate>
+    <lastBuildDate>Sat, 20 Feb 2016 17:46:35 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>启动进行记录pid</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;问题&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;在手动部署springboot程序的时候，执行后想要关毕程序，总是要ps aux&lt;/td&gt;
+      &lt;td&gt;grep java进行查找。在运行的java程序多的时候，找pid十分费眼力。于是想着有什么方法可以直接在运行的时候就记录pid到文件。这样就可以直接根据pid文件kill程序了。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;#方法&lt;/p&gt;
+
+&lt;p&gt;查找相关资料后，发现shell脚本有$!这个指令。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$! 上一个在后台运行的进程pid&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这里有几点需要注意&lt;br /&gt;
+- 上一个进程是指当前shell，所以不用关心其他linux用户执行的情况。&lt;br /&gt;
+- 后台运行的进程，必须是后台运行的进程&lt;/p&gt;
+
+&lt;p&gt;最后新建run.sh脚本：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java -jar app.jar &amp;amp; echo $! &amp;gt; pid
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;关闭脚本shutdown.sh:&lt;br /&gt;
+&lt;code&gt;
+cat pid | xargs kill -9 
+&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 20 Feb 2016 00:00:00 +0800</pubDate>
+        <link>http://gitos.org/2016/02/20/shell-pid/</link>
+        <guid isPermaLink="true">http://gitos.org/2016/02/20/shell-pid/</guid>
+        
+        <category>shell pid</category>
+        
+        <category>$!子进程pid</category>
+        
+        
+      </item>
     
       <item>
         <title>macbook通ssh代理来访问受限的git服务</title>

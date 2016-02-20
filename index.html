@@ -153,6 +153,39 @@
             ">
     			
 <div class="post-preview">
+    <a href="/2016/02/20/shell-pid/">
+        <h2 class="post-title">
+            启动进行记录pid
+        </h2>
+        
+        <h3 class="post-subtitle">
+            shell脚本启动程序，记录被启动的程序pid
+        </h3>
+        
+        <div class="post-content-preview">
+            问题
+
+
+  
+    
+      在手动部署springboot程序的时候，执行后想要关毕程序，总是要ps aux
+      grep java进行查找。在运行的java程序多的时候，找pid十分费眼力。于是想着有什么方法可以直接在运行的时候就记录pid到文件。这样就可以直接根据pid文件kill程序了。
+    
+  
+
+
+#方法
+
+查找相关资料后，发现shell脚本有$!这个指令。...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 楚爷 on February 20, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="/2015/10/25/ssh-proxy-git/">
         <h2 class="post-title">
             macbook通ssh代理来访问受限的git服务
@@ -257,6 +290,18 @@ Host proxyvm
                             
                                 <a href="/tags/#git proxy" title="git proxy" rel="git proxy">
                                     git proxy
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#shell pid" title="shell pid" rel="shell pid">
+                                    shell pid
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#$!子进程pid" title="$!子进程pid" rel="$!子进程pid">
+                                    $!子进程pid
                                 </a>
                             
                         
