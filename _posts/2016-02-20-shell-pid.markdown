@@ -1,0 +1,38 @@
+---
+layout: post
+title:      "启动进行记录pid"
+subtitle:   "shell脚本启动程序，记录被启动的程序pid"
+date:       2016-02-20
+author:     "楚爷"
+header-img: "img/post-bg-os-metro.jpg"
+tags:
+    - shell pid
+    - $!子进程pid
+---
+
+
+# 问题
+
+在手动部署springboot程序的时候，执行后想要关毕程序，总是要ps aux | grep java进行查找。在运行的java程序多的时候，找pid十分费眼力。于是想着有什么方法可以直接在运行的时候就记录pid到文件。这样就可以直接根据pid文件kill程序了。
+
+#方法
+
+查找相关资料后，发现shell脚本有$!这个指令。
+
+- $! 上一个在后台运行的进程pid
+
+这里有几点需要注意
+- 上一个进程是指当前shell，所以不用关心其他linux用户执行的情况。
+- 后台运行的进程，必须是后台运行的进程
+
+最后新建run.sh脚本：
+
+```
+java -jar app.jar & echo $! > pid
+```
+
+关闭脚本shutdown.sh:
+```
+cat pid | xargs kill -9 
+```
+
