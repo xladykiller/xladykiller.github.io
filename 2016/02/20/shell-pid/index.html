@@ -186,19 +186,22 @@
   <li>$! 上一个在后台运行的进程pid</li>
 </ul>
 
-<p>这里有几点需要注意<br />
-- 上一个进程是指当前shell，所以不用关心其他linux用户执行的情况。<br />
-- 后台运行的进程，必须是后台运行的进程</p>
+<p>这里有几点需要注意</p>
+
+<ul>
+  <li>上一个进程是指当前shell，所以不用关心其他linux用户执行的情况。</li>
+  <li>后台运行的进程，必须是后台运行的进程</li>
+</ul>
 
 <p>最后新建run.sh脚本：</p>
 
 <pre><code>java -jar app.jar &amp; echo $! &gt; pid
 </code></pre>
 
-<p>关闭脚本shutdown.sh:<br />
-<code>
-cat pid | xargs kill -9 
-</code></p>
+<p>关闭脚本shutdown.sh:</p>
+
+<pre><code>cat pid | xargs kill -9 
+</code></pre>
 
 
 

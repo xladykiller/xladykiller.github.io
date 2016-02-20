@@ -5,8 +5,8 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 20 Feb 2016 17:46:35 +0800</pubDate>
-    <lastBuildDate>Sat, 20 Feb 2016 17:46:35 +0800</lastBuildDate>
+    <pubDate>Sat, 20 Feb 2016 17:53:16 +0800</pubDate>
+    <lastBuildDate>Sat, 20 Feb 2016 17:53:16 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -30,19 +30,22 @@
   &lt;li&gt;$! 上一个在后台运行的进程pid&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;这里有几点需要注意&lt;br /&gt;
-- 上一个进程是指当前shell，所以不用关心其他linux用户执行的情况。&lt;br /&gt;
-- 后台运行的进程，必须是后台运行的进程&lt;/p&gt;
+&lt;p&gt;这里有几点需要注意&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;上一个进程是指当前shell，所以不用关心其他linux用户执行的情况。&lt;/li&gt;
+  &lt;li&gt;后台运行的进程，必须是后台运行的进程&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;最后新建run.sh脚本：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;java -jar app.jar &amp;amp; echo $! &amp;gt; pid
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;关闭脚本shutdown.sh:&lt;br /&gt;
-&lt;code&gt;
-cat pid | xargs kill -9 
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;关闭脚本shutdown.sh:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cat pid | xargs kill -9 
+&lt;/code&gt;&lt;/pre&gt;
 
 </description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 +0800</pubDate>
