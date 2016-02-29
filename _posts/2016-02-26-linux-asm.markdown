@@ -1,0 +1,39 @@
+---
+layout:     post
+title:      "初看linux 汇编"
+subtitle:   "linux asm"
+date:       2016-02-26
+author:     "楚爷"
+header-img: "img/post-bg-os-metro.jpg"
+tags:
+    - linux
+    - 汇编
+---
+
+# C语言编译成汇编分析
+C语言代码main.c:
+
+```
+int g(int x)
+{
+        return x + 99;
+ }
+ 
+ int f(int x)
+ {
+        return g(x);
+ }
+ 
+ int main(void)
+ {
+        return f(3) + 2;
+ }
+```
+通过gcc编译成汇编
+
+```
+gcc –S –o main.s main.c -m32
+```
+
+[详见](http://my.oschina.net/purely/blog/625586)
+
