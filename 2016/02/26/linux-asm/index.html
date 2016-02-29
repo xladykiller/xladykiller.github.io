@@ -9,9 +9,9 @@
     <meta name="keyword"  content="楚爷, Purely, Blog, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="img/favicon.ico">
 
-    <title>港湾 | Purely Blog</title>
+    <title>初看linux 汇编 - 港湾 | Purely Blog</title>
 
-    <link rel="canonical" href="http://gitos.org/">
+    <link rel="canonical" href="http://gitos.org/2016/02/26/linux-asm/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -122,51 +122,55 @@
 </script>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-os-metro.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/post-bg-os-metro.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>港湾</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">智者远见</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#linux" title="linux">linux</a>
+                        
+                        <a class="tag" href="/tags/#汇编" title="汇编">汇编</a>
+                        
+                    </div>
+                    <h1>初看linux 汇编</h1>
+                    
+                    
+                    <h2 class="subheading">linux asm</h2>
+                    
+                    <span class="meta">Posted by 楚爷 on February 26, 2016</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-        
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-<!-- USE SIDEBAR -->
     <!-- Post Container -->
-    		<div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-    			
-<div class="post-preview">
-    <a href="/2016/02/26/linux-asm/">
-        <h2 class="post-title">
-            初看linux 汇编
-        </h2>
-        
-        <h3 class="post-subtitle">
-            linux asm
-        </h3>
-        
-        <div class="post-content-preview">
-            C语言编译成汇编分析
-C语言代码main.c:
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-int g(int x)
+				<h1 id="c">C语言编译成汇编分析</h1>
+<p>C语言代码main.c:</p>
+
+<pre><code>int g(int x)
 {
         return x + 99;
  }
@@ -180,235 +184,224 @@ int g(int x)
  {
         return f(3) + 2;
  }
+</code></pre>
+<p>通过gcc编译成汇编</p>
 
-通过gcc编译成汇编
+<pre><code>gcc –S –o main.s main.c -m32
+</code></pre>
 
-gcc –S –o main.s main.c -m...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 楚爷 on February 26, 2016
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2016/02/20/shell-pid/">
-        <h2 class="post-title">
-            启动进行记录pid
-        </h2>
-        
-        <h3 class="post-subtitle">
-            shell脚本启动程序，记录被启动的程序pid
-        </h3>
-        
-        <div class="post-content-preview">
-            问题
+<p><a href="http://my.oschina.net/purely/blog/625586">详见</a></p>
 
 
-  
-    
-      在手动部署springboot程序的时候，执行后想要关毕程序，总是要ps aux
-      grep java进行查找。在运行的java程序多的时候，找pid十分费眼力。于是想着有什么方法可以直接在运行的时候就记录pid到文件。这样就可以直接根据pid文件kill程序了。
-    
-  
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/2016/02/26/linux-asm"
+                    data-title="初看linux 汇编"
+                    data-url="http://gitos.org/2016/02/26/linux-asm/"
+                    data-images="http://gitos.org/img/post-bg-os-metro.jpg"
+                    data-content="C语言编译成汇编分析
+C语言代码main.c:
+
+int g(int x)
+{
+        return x + 99;
+ }
+ 
+ int f(in... | 港湾 | Purely Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
 
 
-#方法
-
-查找相关资料后，发现shell脚本有$!这个指令。...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 楚爷 on February 20, 2016
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2015/10/25/ssh-proxy-git/">
-        <h2 class="post-title">
-            macbook通ssh代理来访问受限的git服务
-        </h2>
-        
-        <h3 class="post-subtitle">
-            通过有权限的代理服务器提交git
-        </h3>
-        
-        <div class="post-content-preview">
-            先安装proxychains-ng:
-
-brew install proxychains-ng
-
-然后将公钥上传服务器, 并在服务器的~/.ssh下建立authorized_keys文件，进行免登陆处理
-
-cat id_rsa.pub &gt;&gt; authorized_keys
-
-本地编辑
-
-vim ~/.ssh/config
-
-代理服务器
-
-Host proxyvm
-
-       ...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 楚爷 on October 25, 2015
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2015/10/24/new-blog/">
-        <h2 class="post-title">
-            第一次使用github写博客
-        </h2>
-        
-        <h3 class="post-subtitle">
-            github pages
-        </h3>
-        
-        <div class="post-content-preview">
-            走上技术道路以来，总是想着要写写博客，记录自己的成长路程。一直用着免费得博客系统，也一直想着要自己搭建一个博客，每次要实施的时候，总是各种原因没有坚持下去，导致服务器到期，然后不了了之。
-
-这几日，经常想着自己重新弄个博客，刚好这周末不加班，就查了查博客方案。发现很多人推荐使用github的page来做博客，然后看了下文档，可以自定义域名。这个正好符合我的要求，一来可以使用自己的域名，二来免...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 楚爷 on October 24, 2015
-    </p>
-</div>
-<hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/02/20/shell-pid/" data-toggle="tooltip" data-placement="top" title="启动进行记录pid">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
 
 
-<!-- Pager -->
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/2016/02/26/linux-asm"
+                        data-title="初看linux 汇编"
+                        data-url="http://gitos.org/2016/02/26/linux-asm/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
 
+            </div>
 
-    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
+        				
                             
-                                <a href="/tags/#jekyll" title="jekyll" rel="jekyll">
+                				<a href="/tags/#jekyll" title="jekyll" rel="jekyll">
                                     jekyll
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#github.io" title="github.io" rel="github.io">
+                				<a href="/tags/#github.io" title="github.io" rel="github.io">
                                     github.io
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#博客" title="博客" rel="博客">
+                				<a href="/tags/#博客" title="博客" rel="博客">
                                     博客
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#ssh proxy" title="ssh proxy" rel="ssh proxy">
+                				<a href="/tags/#ssh proxy" title="ssh proxy" rel="ssh proxy">
                                     ssh proxy
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#git proxy" title="git proxy" rel="git proxy">
+                				<a href="/tags/#git proxy" title="git proxy" rel="git proxy">
                                     git proxy
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#shell pid" title="shell pid" rel="shell pid">
+                				<a href="/tags/#shell pid" title="shell pid" rel="shell pid">
                                     shell pid
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#$!子进程pid" title="$!子进程pid" rel="$!子进程pid">
+                				<a href="/tags/#$!子进程pid" title="$!子进程pid" rel="$!子进程pid">
                                     $!子进程pid
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#linux" title="linux" rel="linux">
+                				<a href="/tags/#linux" title="linux" rel="linux">
                                     linux
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#汇编" title="汇编" rel="汇编">
+                				<a href="/tags/#汇编" title="汇编" rel="汇编">
                                     汇编
                                 </a>
                             
-                        
-                    </div>
+        				
+        			</div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        
-                            <img src="/img/avatar-cy.png" />
-                        
-                        
-                            <p>创过业、做过独立开发者、上过班</p>
-                        
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://github.com/xladykiller">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </section>
                 <!-- Friends Blog -->
                 
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     
-                        <li><a target="_blank" href="http://kathyxxu.github.io">Kathyxxu</a></li>
+                        <li><a href="http://kathyxxu.github.io">Kathyxxu</a></li>
                     
-                        <li><a target="_blank" href="http://www.ilanni.com">烂泥行天下</a></li>
+                        <li><a href="http://www.ilanni.com">烂泥行天下</a></li>
                     
-                        <li><a target="_blank" href="http://www.yuanbaopu.com/">元宝铺</a></li>
+                        <li><a href="http://www.yuanbaopu.com/">元宝铺</a></li>
                     
                 </ul>
                 
-    		</div>
-        
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="14025164"  />
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
 
 
     <!-- Footer -->

@@ -5,9 +5,48 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 20 Feb 2016 17:53:16 +0800</pubDate>
-    <lastBuildDate>Sat, 20 Feb 2016 17:53:16 +0800</lastBuildDate>
+    <pubDate>Mon, 29 Feb 2016 11:58:43 +0800</pubDate>
+    <lastBuildDate>Mon, 29 Feb 2016 11:58:43 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>初看linux 汇编</title>
+        <description>&lt;h1 id=&quot;c&quot;&gt;C语言编译成汇编分析&lt;/h1&gt;
+&lt;p&gt;C语言代码main.c:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int g(int x)
+{
+        return x + 99;
+ }
+ 
+ int f(int x)
+ {
+        return g(x);
+ }
+ 
+ int main(void)
+ {
+        return f(3) + 2;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;通过gcc编译成汇编&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gcc –S –o main.s main.c -m32
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://my.oschina.net/purely/blog/625586&quot;&gt;详见&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Feb 2016 00:00:00 +0800</pubDate>
+        <link>http://gitos.org/2016/02/26/linux-asm/</link>
+        <guid isPermaLink="true">http://gitos.org/2016/02/26/linux-asm/</guid>
+        
+        <category>linux</category>
+        
+        <category>汇编</category>
+        
+        
+      </item>
     
       <item>
         <title>启动进行记录pid</title>
