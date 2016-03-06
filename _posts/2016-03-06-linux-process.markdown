@@ -2,7 +2,7 @@
 layout:     post
 title:      "linux进程切换"
 subtitle:   "process switch"
-date:       2015-10-24
+date:       2016-03-06
 author:     "楚爷"
 header-img: "img/post-bg-os-metro.jpg"
 tags:
