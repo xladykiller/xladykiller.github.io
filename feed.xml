@@ -5,9 +5,25 @@
     <description>全栈工程师 | 楚爷，后端工程师，业余前端，iOS工程师 | 这里是 @Purely 的个人博客，记录点点滴滴。</description>
     <link>http://gitos.org/</link>
     <atom:link href="http://gitos.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 06 Mar 2016 18:57:54 +0800</pubDate>
-    <lastBuildDate>Sun, 06 Mar 2016 18:57:54 +0800</lastBuildDate>
+    <pubDate>Sun, 06 Mar 2016 19:14:18 +0800</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2016 19:14:18 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>linux进程切换</title>
+        <description>&lt;p&gt;施正楚 + 原创作品转载请注明出处 + 《Linux内核分析》MOOC课程http://mooc.study.163.com/course/USTC-1000029000&lt;/p&gt;
+
+&lt;p&gt;稍后发作业&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 06 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://gitos.org/2016/03/06/linux-process/</link>
+        <guid isPermaLink="true">http://gitos.org/2016/03/06/linux-process/</guid>
+        
+        <category>linux process switch</category>
+        
+        
+      </item>
     
       <item>
         <title>blog从github迁移到万网的虚拟主机</title>
@@ -187,22 +203,6 @@ clone工程和提交了。&lt;/p&gt;
         <category>github.io</category>
         
         <category>博客</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>linux进程切换</title>
-        <description>&lt;p&gt;施正楚 + 原创作品转载请注明出处 + 《Linux内核分析》MOOC课程http://mooc.study.163.com/course/USTC-1000029000&lt;/p&gt;
-
-&lt;p&gt;稍后发作业&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 24 Oct 2015 00:00:00 +0800</pubDate>
-        <link>http://gitos.org/2015/10/24/linux-process/</link>
-        <guid isPermaLink="true">http://gitos.org/2015/10/24/linux-process/</guid>
-        
-        <category>linux process switch</category>
         
         
       </item>
