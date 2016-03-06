@@ -9,9 +9,9 @@
     <meta name="keyword"  content="楚爷, Purely, Blog, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="img/favicon.ico">
 
-    <title>初看linux 汇编 - 港湾 | Purely Blog</title>
+    <title>linux进程切换 - 港湾 | Purely Blog</title>
 
-    <link rel="canonical" href="http://gitos.org/2016/02/26/linux-asm/">
+    <link rel="canonical" href="http://gitos.org/2015/10/24/linux-process/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -139,17 +139,15 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#linux" title="linux">linux</a>
-                        
-                        <a class="tag" href="/tags/#汇编" title="汇编">汇编</a>
+                        <a class="tag" href="/tags/#linux process switch" title="linux process switch">linux process switch</a>
                         
                     </div>
-                    <h1>初看linux 汇编</h1>
+                    <h1>linux进程切换</h1>
                     
                     
-                    <h2 class="subheading">linux asm</h2>
+                    <h2 class="subheading">process switch</h2>
                     
-                    <span class="meta">Posted by 楚爷 on February 26, 2016</span>
+                    <span class="meta">Posted by 楚爷 on October 24, 2015</span>
                 </div>
             </div>
         </div>
@@ -167,30 +165,9 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-				<h1 id="c">C语言编译成汇编分析</h1>
-<p>C语言代码main.c:</p>
+				<p>施正楚 + 原创作品转载请注明出处 + 《Linux内核分析》MOOC课程http://mooc.study.163.com/course/USTC-1000029000</p>
 
-<pre><code>int g(int x)
-{
-        return x + 99;
- }
- 
- int f(int x)
- {
-        return g(x);
- }
- 
- int main(void)
- {
-        return f(3) + 2;
- }
-</code></pre>
-<p>通过gcc编译成汇编</p>
-
-<pre><code>gcc –S –o main.s main.c -m32
-</code></pre>
-
-<p><a href="http://my.oschina.net/purely/blog/625586">详见</a></p>
+<p>稍后发作业</p>
 
 
 
@@ -201,19 +178,11 @@
                 </style>
                 <div class="ds-share"
                     style="text-align: right"
-                    data-thread-key="/2016/02/26/linux-asm"
-                    data-title="初看linux 汇编"
-                    data-url="http://gitos.org/2016/02/26/linux-asm/"
+                    data-thread-key="/2015/10/24/linux-process"
+                    data-title="linux进程切换"
+                    data-url="http://gitos.org/2015/10/24/linux-process/"
                     data-images="http://gitos.org/img/post-bg-os-metro.jpg"
-                    data-content="C语言编译成汇编分析
-C语言代码main.c:
-
-int g(int x)
-{
-        return x + 99;
- }
- 
- int f(in... | 港湾 | Purely Blog " >
+                    data-content="施正楚 + 原创作品转载请注明出处 + 《Linux内核分析》MOOC课程http://mooc.study.163.com/course/USTC-10... | 港湾 | Purely Blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -232,13 +201,9 @@ int g(int x)
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2016/02/20/shell-pid/" data-toggle="tooltip" data-placement="top" title="启动进行记录pid">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2016/02/29/transfer-blog/" data-toggle="tooltip" data-placement="top" title="blog从github迁移到万网的虚拟主机">Next Post &rarr;</a>
+                        <a href="/2015/10/24/new-blog/" data-toggle="tooltip" data-placement="top" title="第一次使用github写博客">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -248,9 +213,9 @@ int g(int x)
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                        data-thread-key="/2016/02/26/linux-asm"
-                        data-title="初看linux 汇编"
-                        data-url="http://gitos.org/2016/02/26/linux-asm/" >
+                        data-thread-key="/2015/10/24/linux-process"
+                        data-title="linux进程切换"
+                        data-url="http://gitos.org/2015/10/24/linux-process/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
